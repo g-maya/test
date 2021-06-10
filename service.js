@@ -1,17 +1,5 @@
 // lesson 2
 // Реализовать функцию для поиска сотрудника по имени и фамилии
-        function
-        findByName(name, surname) {
-                    let res  = [];
-                    for (var e of DATA.employees) {
-                    if ((!name || e.name===name) &&
-                    (!surname || e.surname===surname)) {
-                    res.push(e);
-        }
-    }
-    return res ;
-}
-
 // Реализовать функцию для добавления сотрудника по имени и фамилии.
 
         function
