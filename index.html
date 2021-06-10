@@ -1,0 +1,43 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="employeesPlaceholder"></div>
+
+<div>
+    Имя:
+    <input id="name" placeholder="Имя">
+
+    Фамилия:
+    <input id="surname" placeholder="Фамилия">
+
+    <button onclick="addEmployeeUI()">Добавить сотрудника</button>
+</div>
+
+
+<div id="addEmployeeFormErrorMessage"></div>
+
+</body>
+</html>
+
+
+<script src="employees-json.js"></script>
+<script src="service.js"></script>
+<script src="ui.js"></script>
+
+
+
+<script>
+    function runUI() {
+        showEmployees(DATA.employees);
+    }
+</script>
